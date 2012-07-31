@@ -7,7 +7,7 @@
      * @returns the DOM element being acted upon, as a jQuery object.
      */
     $.fn.simplePopover = function (content) {
-        var template = '<div class="popover"><div class="content"></div><div class="arrow"></div></div>',
+        var template = '<div class="simple-popover"><div class="content"></div><div class="arrow"></div></div>',
             $popover = $(template),
             self = this;
 
