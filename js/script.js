@@ -1,5 +1,9 @@
 $(function () {
     var $logo = $('#logo');
 
-    $logo.simplePopover('Hello, World!')
+    $logo.simplePopover({
+        content: 'Hello, World!',
+        //padding: 0,
+        position: 'right'
+    });
 });
