@@ -12,11 +12,26 @@
             self = this;
 
         this.hover(function () {
+            var left;
+
             $popover.find('.content').html(content);
             $('body').append($popover);
+
+            left = (Math.floor((self.width() - $popover.width()) / 2) + self.offset().left);
+
+            if (left < 0) {
+                left = 0;
+                $popover.find('.arrow').css({ 'left': '20px' });
+            }
+
+            if (left + $popover.outerWidth(true) > $(window).width()) {
+                left = $(window).width() - $popover.outerWidth(true);
+                $popover.find('.arrow').css({ 'left': $popover.outerWidth(true) - 20 + 'px' });
+            }
+
             $popover.css({
                 'top': (self.offset().top - $popover.outerHeight(true) - 10) + 'px',
-                'left': ( Math.floor((self.width() - $popover.width()) / 2) + self.offset().left) + 'px'
+                'left': left + 'px'
             });
 
             $popover.fadeIn(100);
