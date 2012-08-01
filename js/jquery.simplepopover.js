@@ -3,7 +3,10 @@
     /**
      * A JavaScript plugin that displays a popover on a hovered DOM element.
      *
-     * @param content: the content to display in the popover.
+     * @param options: an object with the following options:
+     *     content: the HTML content that you want to input into the popover.
+     *     padding: how much padding should the white area have.
+     *     position: the popover's orientation.
      * @returns the DOM element being acted upon, as a jQuery object.
      */
     $.fn.simplePopover = function (options) {
