@@ -15,7 +15,7 @@ Of course, you can pass additional options to the `simplePopover` method. And he
     {
         // An HTML string that represent what content should be inside the
         // popover.
-        content: "<p>Hello, World!<p>"
+        content: "<p>Hello, World!<p>",
 
         // A number that represents how much padding that you would want in the
         // popover's white area.
