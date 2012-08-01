@@ -19,7 +19,7 @@ Of course, you can pass additional options to the `simplePopover` method. And he
 
         // A number that represents how much padding that you would want in the
         // popover's white area.
-        padding: 0,
+        padding: 4,
 
         // A string representing the popover's orientation. Accepts either the
         // values "right", "left", "top", or "bottom". Defaults to "top".
