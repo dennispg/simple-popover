@@ -1,4 +1,13 @@
-(function ($) {
+(function () {
+
+    "use strict";
+
+    var window = window || this,
+        $      = window.jQuery;
+
+    var isUndefined = function (obj) {
+        return typeof obj === 'undefined' || obj === null;
+    };
 
     /**
      * A JavaScript plugin that displays a popover on a hovered DOM element.
@@ -27,7 +36,7 @@
             $this.hover(function () {
                 var left, top;
 
-                if (options.content == null) {
+                if (isUndefined(options.content)) {
                     $popover.find('.content').html(self.data('content'));
                 } else {
                     $popover.find('.content').html(options.content);
@@ -35,7 +44,7 @@
 
                 $('body').append($popover);
 
-                if (options.padding != null) {
+                if (typeof options.content === options.padding !== null) {
                     $popover.find('.content').css({ 'padding': options.padding + 'px' });
                 }
 
@@ -58,7 +67,7 @@
                         'top': '50%'
                     });
                 } else if (options.position === 'left') {
-                    left = self.offset().left - $popover.outerWidth(true) - 10
+                    left = self.offset().left - $popover.outerWidth(true) - 10;
                     top = Math.floor((self.outerHeight(true) - $popover.outerHeight(true)) / 2) + self.offset().top;
 
                     $popover.css({
@@ -132,4 +141,4 @@
         return this;
     };
 
-}.call(this, jQuery));
+}.call(this));

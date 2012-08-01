@@ -6,3 +6,6 @@ build:
 	lessc less/jquery.simplepopover.less > bin/jquery.simplepopover.css
 clean:
 	rm -rf bin
+lint:
+	@jshint ./
+	@echo "Everything seems all well and good."
