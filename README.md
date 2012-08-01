@@ -23,6 +23,6 @@ Of course, you can pass additional options to the `simplePopover` method. And he
         padding: 0,
 
         // A string representing the popover's orientation. Accepts either the
-        // values "right", "left", "top", or "bottom".
-        position:
+        // values "right", "left", "top", or "bottom". Defaults to "top".
+        position: "top"
     }
