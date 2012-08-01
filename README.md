@@ -13,7 +13,6 @@ And boom! Should be ready.
 Of course, you can pass additional options to the `simplePopover` method. And here they are:
 
     {
-
         // An HTML string that represent what content should be inside the
         // popover.
         content: "<p>Hello, World!<p>"
