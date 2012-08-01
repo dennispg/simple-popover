@@ -47,6 +47,25 @@
                         'top': '50%'
                     });
 
+                } else if (options.position === 'left') {
+                    left = self.offset().left - $popover.outerWidth(true) - 10
+                    top = Math.floor((self.outerHeight(true) - $popover.outerHeight(true)) / 2) + self.offset().top;
+
+                    $popover.css({
+                        top: top + 'px',
+                        left: left + 'px'
+                    });
+
+                    $popover.find('.arrow').css({
+                        'margin-left': '0',
+                        'margin-top': '-5px',
+                        'border-top': '5px solid transparent',
+                        'border-bottom': '5px solid transparent',
+                        'border-left': '5px solid black',
+                        'left': $popover.outerWidth(true) + 'px',
+                        'top': '50%'
+                    });
+
                 } else {
                     left = (Math.floor((self.width() - $popover.width()) / 2) + self.offset().left);
 

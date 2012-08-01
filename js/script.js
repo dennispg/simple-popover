@@ -4,6 +4,6 @@ $(function () {
     $logo.simplePopover({
         content: 'Hello, World!',
         //padding: 0,
-        position: 'right'
+        position: 'left'
     });
 });
