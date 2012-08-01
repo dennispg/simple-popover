@@ -25,3 +25,7 @@ Of course, you can pass additional options to the `simplePopover` method. And he
         // values "right", "left", "top", or "bottom". Defaults to "top".
         position: "top"
     }
+
+## Limitation Over Bootstrap's Popover
+
+It doesn't cover "toggleable" popovers. You'd have to use Bootstrap's popover plugin.
